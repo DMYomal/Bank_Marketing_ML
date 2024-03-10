@@ -1,9 +1,11 @@
-I.	Introduction
+<h1> Machine Learning Approach to Client Subscription Classification in Bank Marketing Campaign </h1>
+
+<h2>I.	Introduction</h2>
 
 The dataset originates from a direct marketing campaign conducted by a Portuguese banking institution, with the primary objective of promoting long-term deposits through telemarketing phone calls. The campaign involves human agents reaching out to a list of clients in an attempt to sell the bank's term deposit products. The outcome of each call is categorized as either a successful ("yes") or unsuccessful ("no") contact which is considered as the target variable (Subscribe). 
 Banks need to identify the right customers at the right time. The outcomes change with many external and internal factors and ML approaches are the best for identifying potential clients.
 
-II.	Data Overview
+<h2>II.	Data Overview</h2>
 
 Each record in the dataset comprises key information, including the target output (contact outcome), telemarketing attributes (e.g., call duration), and client-related details (e.g., age). The dataset includes a combination of both categorical and numerical attributes, each providing insights into the factors that influence the success of the marketing campaign. The data set is unbalanced with 4648 success records and 36548 unsuccess records.
 The independent attributes are as follows:
@@ -86,7 +88,7 @@ Through the exploration of the interplay between categorical and numerical varia
 ![image](https://github.com/DMYomal/Bank_Marketing_ML/assets/43990286/c2a44189-49f3-49a0-84ae-db9fd639fdb1)
 
 
-III.	Model Fitting
+<h2>III.	Model Fitting</h2>
 
 Preparation of the data set for model fitting
 The categorical variable columns’ unique categories labels are as below.
@@ -117,7 +119,7 @@ To address data imbalance, class weights were applied to the minor class based o
 
 After the one hot encoding, the independent variable attributes increased to 48 and this may reason for to curse of dimensionality. Hence, principal component analysis was done with 5 components.
 
-I.	Model Evaluation
+<h2>IV.	Model Evaluation</h2>
 
 The models are evaluated using precision, recall, F1 score, model accuracy, and confusion matrix.
 
@@ -207,7 +209,7 @@ Overall, the model's performance after SMOTE resampling seems to be an improveme
 ![image](https://github.com/DMYomal/Bank_Marketing_ML/assets/43990286/76b9f588-5925-46f9-9c53-a461fa4260bc)
 
 
-V.	Conclusion
+<h2>V.	Conclusion</h2>
 
 The classification goal of the study is to predict if the client will subscribe to a term deposit according to the features of the client and the marketing campaign. 
 1.	After the EDA, it was identified that,
@@ -217,12 +219,12 @@ The classification goal of the study is to predict if the client will subscribe 
 3.	Extreme gradient boosts classifier performed better than the other three models such as random forest, SVM and logistic regression and SMOT can be used to improve the model accuracy.
 4.	The developed model is better for identifying a good portion of non-subscribers than subscribers.
 
-VI.	Limitation and Future Improvements.
+<h2>VI.	Limitation and Future Improvements.</h2>
 
 The final model is good to identify the non-subscribers but there's room for improvement in accurately identifying subscribers. There is still a need to balance the trade-off between precision and recall, especially for identifying subscribers. Further adjustments to the model or using different techniques might be necessary to achieve a more balanced performance between the two classes.
 The hyperparameter techniques such as Grid Search, Random Search, Hyperopt, etc. for better accuracy of the model.
 
-VII.	Reference
+<h2>VII.Reference</h2>
 
 1.  Asare-Frempong, J. and Jayabalan, M. (2017) Predicting customer response to bank direct telemarketing campaign. 2017 International Conference on Engineering Technology and Technopreneurship (ICE2T) [online]. Available from: https://ieeexplore.ieee.org/document/8215961.
 2.  Kim, K.-H., Lee, C.-S., Jo, S.-M. and Cho, S.-B. (2015) Predicting the success of bank telemarketing using deep convolutional neural network IEEE Xplore. 1 November 2015 [online]. pp. 314–317. Available from: https://ieeexplore.ieee.org/abstract/document/7492828 [Accessed 28 April 2020].
